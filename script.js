@@ -195,7 +195,8 @@ Simulator.prototype.groupResults = function (result, move) {
     }
     return grouping;
 };
-function runSimulation(){
+function runSimulation(that){
+    console.log(that);
     var game = new Game(null, true);
     game.play();
     game.MoveHistory.forEach(function(move){
